@@ -1,0 +1,114 @@
+* {cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;}
+
+body {
+    height: 100%; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F0F0F0; 
+}
+
+.contact_form {
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fff;
+    padding-left: 30px; 
+}
+
+input {
+    background-color: #fff; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #6495ED; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+textarea {
+    background-color: #fff; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #6495ED; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+label {
+    display: block; 
+    float: center;  
+}
+
+button {
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #6495ED; 
+    border-color: #6495ED; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+}
+
+button p {
+    color: #fff; 
+}
+
+span {
+    color: #6495ED; 
+}
+
+.aviso {
+    font-size: 13px;  
+    color: #555; 
+}
+
+h1 {
+    font-size: 39px;  
+    text-align: left; 
+    padding-bottom: 20px; 
+    color: #6495ED; 
+}
+
+h3 {
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #555; 
+}
+
+p {
+    font-size: 14px; 
+    color: #555; 
+}
+
+::-webkit-input-placeholder {
+   color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
