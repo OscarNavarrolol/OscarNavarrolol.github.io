@@ -1,76 +1,90 @@
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
+<!DOCTYPE html>
 
-  <link rel="stylesheet" type="text/css" href="/css/contact-form.css">
-  
-  </head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/contacto.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="/imgs/logo.png" alt="Logo"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="BarberiaAluraPrincipal.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
-<body>  
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-  <div class="contact_form">
+                <label for="telefono" >Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-    <div class="formulario">      
-      <h1>Formulario de contacto</h1>
-      <div class="btnRegresar">
-        <a href="/index.html"> Regresar </a>
-      </div>
-        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>Cómo le gustaría que lo contactemos?</legend>
 
+                    <legend for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" >Email</legend>
+                    
+                    <legend for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono" >Teléfono</legend>
+                    
+                    <legend for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</legend>
+                    
+                </fieldset>
+               
+                <div>
+                    <legend>En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+                
+                <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barbería Alura?</label>                
+                
+                <input type="submit" value="Enviar formulario"  class="enviar">
 
-          <form action="submeter-formulario.php" method="post">       
-
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                <p>
-                  <label for="website" class="colocar_website">Sitio web
-                  </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                </p>    
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
-
-</body>
+            </form>
+            <table>
+              <thead>
+                  <tr>
+                      <th>Día</th>
+                      <th>Horario</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Lunes</td>
+                      <td>8h ~ 20h</td>
+                  </tr>
+                  <tr>
+                      <td>Miércoles</td>
+                      <td>8h ~ 20h</td>
+                  </tr>
+                  <tr>
+                      <td>Viernes</td>
+                      <td>8h ~ 20h</td>
+                  </tr>
+              </tbody>
+          </table>
+        </main>
+        <footer>
+            <img src="/imgs/logo-blanco.png" alt="logo-blanco">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+        </footer>
+    </body>
 </html>
